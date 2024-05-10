@@ -12,7 +12,6 @@ const Menu = ({ handleNewChat, setChatIndex }) => {
     };
     const handleChat = (index) => {
         return () => {
-            // console.log("conversationlist", conversations[index]);
             setActiveConversation(conversations[index]);
             localStorage.setItem("activeConversation",JSON.stringify(activeConversation));
             setChatIndex(index);
